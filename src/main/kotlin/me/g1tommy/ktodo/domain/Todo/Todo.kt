@@ -14,6 +14,7 @@ data class Todo(
     var title: String,
     var content: String,
     var due: Instant,
+    var done: Boolean,
     @CreatedDate var createdAt: Instant? = Instant.now(),
     @LastModifiedDate var updatedAt: Instant? = createdAt
 )
